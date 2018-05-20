@@ -27,4 +27,4 @@ Some hands on experiment with Rxjs 6 and Angular 6
 
 - Example with Rxjs hot cold observables
 
-- Example with ng-template and ng-container with ngtemplateoutlet in angular
+- Example with `<ng-template>` and `<ng-container>` with `*ngTemplateOutlet` in angular
