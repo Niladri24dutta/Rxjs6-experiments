@@ -8,10 +8,11 @@ import {RxSubjectComponent} from './rx-subject/rx-subject.component'
 import {RxFilterComponent} from './rx-filter/rx-filter.component'
 import {RxDebounceComponent} from './rx-debounce/rx-debounce.component'
 import {RxScanReduceComponent} from './rx-scan-reduce/rx-scan-reduce.component'
-// import {RxPluckComponent} from './rx-pluck/rx-pluck.component'
+import {RxPluckComponent} from './rx-pluck/rx-pluck.component'
 import {RxMergemapComponent} from './rx-mergemap/rx-mergemap.component'
-// import {RxSwitchmapComponent} from './rx-switchmap/rx-switchmap.component'
- 
+import {RxSwitchmapComponent} from './rx-switchmap/rx-switchmap.component'
+import {RxBehaviourSubjectComponent} from './rx-behaviour-subject/rx-behaviour-subject.component' 
+
 const appRoutes : Routes = [
     
     {
@@ -42,18 +43,22 @@ const appRoutes : Routes = [
         path:'rxscan',
         component:RxScanReduceComponent
     },
-    // {
-    //     path:'rxpluck',
-    //     component:RxPluckComponent
-    // },
+    {
+        path:'rxpluck',
+        component:RxPluckComponent
+    },
     {
         path:'rxmergemap',
         component:RxMergemapComponent
     },
-    // {
-    //     path:'rxswitchmap',
-    //     component:RxSwitchmapComponent
-    // },
+    {
+        path:'rxswitchmap',
+        component:RxSwitchmapComponent
+    },
+    {
+        path:'rxbehaviour',
+        component:RxBehaviourSubjectComponent
+    },
     { path: '', redirectTo: '/', pathMatch: 'full' }
  
 ];

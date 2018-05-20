@@ -10,6 +10,9 @@ import { RxFilterComponent } from './rx-filter/rx-filter.component';
 import { RxDebounceComponent } from './rx-debounce/rx-debounce.component';
 import { RxScanReduceComponent } from './rx-scan-reduce/rx-scan-reduce.component';
 import { RxMergemapComponent } from './rx-mergemap/rx-mergemap.component';
+import { RxPluckComponent } from './rx-pluck/rx-pluck.component';
+import { RxSwitchmapComponent } from './rx-switchmap/rx-switchmap.component';
+import { RxBehaviourSubjectComponent } from './rx-behaviour-subject/rx-behaviour-subject.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { RxMergemapComponent } from './rx-mergemap/rx-mergemap.component';
     RxFilterComponent,
     RxDebounceComponent,
     RxScanReduceComponent,
-    RxMergemapComponent
+    RxMergemapComponent,
+    RxPluckComponent,
+    RxSwitchmapComponent,
+    RxBehaviourSubjectComponent
   ],
   imports: [
     BrowserModule,
