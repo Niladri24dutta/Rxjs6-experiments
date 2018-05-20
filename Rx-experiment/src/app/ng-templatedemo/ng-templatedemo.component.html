@@ -1,0 +1,55 @@
+<!--
+ 
+  Example using ng-template
+-->
+<button (click)="setStatus()">Show loading</button> &nbsp; &nbsp; &nbsp; <button (click)="setStatus()">Stop loading</button> <br><br>
+<div class="lessons-list" *ngIf="lessons else loading">
+  This are the lessons
+</div>
+ 
+<ng-template #loading>
+  Loading ..
+</ng-template>
+ 
+<!--
+ 
+Using ng-container to use multiple structural directives  -->
+ 
+<ng-container *ngIf="isLesson">
+  <div class="lessons" *ngFor="let lesson of availableLessons">
+    <div class="lesson-detail">
+        {{lesson | json}}
+    </div>
+  </div>
+</ng-container>
+ 
+<!-- dynamic template creation using ngTemplateOutlet and template context -->
+<ng-template #estimateTemplate let-lessonsCounter="estimate">
+  <div>The total available lessons are {{lessonsCounter}} </div>
+</ng-template>
+ 
+<ng-container *ngTemplateOutlet = "estimateTemplate;context:ctx">
+</ng-container>
+ 
+<!-- using Viewchild to access templateRef from the typescript -->
+ 
+<ng-template #defaultTabButtons>
+          <button class="tab-button" (click)="login()">
+            {{loginText}}
+          </button>
+          <button class="tab-button" (click)="signUp()">
+            {{signUpText}}
+          </button>
+</ng-template>
+ 
+<!-- passing templateRef as input parameter to another component -->
+ 
+<ng-template #customTabButtons>
+          <button class="custom-tab-button" (click)="login()">
+            {{loginText}}
+          </button>
+          <button class="custom-tab-button" (click)="signUp()">
+            {{signUpText}}
+          </button>
+</ng-template> <br>
+<app-tabcontainer [headerTemplate] = "customTabButtons"></app-tabcontainer>

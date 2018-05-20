@@ -1,0 +1,7 @@
+<ng-template #defaultbuttons>
+  <div class="default-buttons">
+    These are default buttons
+  </div>
+</ng-template>
+
+<ng-container *ngTemplateOutlet="headerTemplate ? headerTemplate : defaultbuttons"></ng-container>
