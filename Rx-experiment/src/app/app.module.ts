@@ -13,6 +13,8 @@ import { RxMergemapComponent } from './rx-mergemap/rx-mergemap.component';
 import { RxPluckComponent } from './rx-pluck/rx-pluck.component';
 import { RxSwitchmapComponent } from './rx-switchmap/rx-switchmap.component';
 import { RxBehaviourSubjectComponent } from './rx-behaviour-subject/rx-behaviour-subject.component';
+import { RxPairwiseComponent } from './rx-pairwise/rx-pairwise.component';
+import { RxhotcoldObservableComponent } from './rxhotcold-observable/rxhotcold-observable.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { RxBehaviourSubjectComponent } from './rx-behaviour-subject/rx-behaviour
     RxMergemapComponent,
     RxPluckComponent,
     RxSwitchmapComponent,
-    RxBehaviourSubjectComponent
+    RxBehaviourSubjectComponent,
+    RxPairwiseComponent,
+    RxhotcoldObservableComponent
   ],
   imports: [
     BrowserModule,

@@ -22,3 +22,7 @@ Some hands on experiment with Rxjs 6 and Angular 6
 - Example with Rxjs `switchMap()` operator
 
 - Example with Rxjs `BehaviorSubject  with forkJoin and concat operator` 
+
+- Example with Rxjs `pairwise and combineLatest`
+
+- Example with Rxjs hot cold observables

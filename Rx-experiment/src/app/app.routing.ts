@@ -12,6 +12,8 @@ import {RxPluckComponent} from './rx-pluck/rx-pluck.component'
 import {RxMergemapComponent} from './rx-mergemap/rx-mergemap.component'
 import {RxSwitchmapComponent} from './rx-switchmap/rx-switchmap.component'
 import {RxBehaviourSubjectComponent} from './rx-behaviour-subject/rx-behaviour-subject.component' 
+import {RxPairwiseComponent} from './rx-pairwise/rx-pairwise.component'
+import {RxhotcoldObservableComponent} from './rxhotcold-observable/rxhotcold-observable.component'
 
 const appRoutes : Routes = [
     
@@ -58,6 +60,14 @@ const appRoutes : Routes = [
     {
         path:'rxbehaviour',
         component:RxBehaviourSubjectComponent
+    },
+    {
+        path:'rxpairwise',
+        component:RxPairwiseComponent
+    },
+    {
+        path:'rxhotcold',
+        component:RxhotcoldObservableComponent
     },
     { path: '', redirectTo: '/', pathMatch: 'full' }
  
