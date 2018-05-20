@@ -14,6 +14,7 @@ import {RxSwitchmapComponent} from './rx-switchmap/rx-switchmap.component'
 import {RxBehaviourSubjectComponent} from './rx-behaviour-subject/rx-behaviour-subject.component' 
 import {RxPairwiseComponent} from './rx-pairwise/rx-pairwise.component'
 import {RxhotcoldObservableComponent} from './rxhotcold-observable/rxhotcold-observable.component'
+import {NgTemplatedemoComponent} from './ng-templatedemo/ng-templatedemo.component'
 
 const appRoutes : Routes = [
     
@@ -68,6 +69,10 @@ const appRoutes : Routes = [
     {
         path:'rxhotcold',
         component:RxhotcoldObservableComponent
+    },
+    {
+        path:'ngtemplate',
+        component:NgTemplatedemoComponent
     },
     { path: '', redirectTo: '/', pathMatch: 'full' }
  
