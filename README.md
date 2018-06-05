@@ -29,4 +29,4 @@ Some hands on experiment with Rxjs 6 and Angular 6
 
 - Example with `<ng-template>` and `<ng-container>` with `*ngTemplateOutlet` in angular
 
-- Example with content projection in angular(single and multi slot)
+- Example with content projection in angular(single and multi slot) with `<ng-content>`
