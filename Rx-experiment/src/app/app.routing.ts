@@ -15,6 +15,7 @@ import {RxBehaviourSubjectComponent} from './rx-behaviour-subject/rx-behaviour-s
 import {RxPairwiseComponent} from './rx-pairwise/rx-pairwise.component'
 import {RxhotcoldObservableComponent} from './rxhotcold-observable/rxhotcold-observable.component'
 import {NgTemplatedemoComponent} from './ng-templatedemo/ng-templatedemo.component'
+import {ContenttestComponent} from './contenttest/contenttest.component'
 
 const appRoutes : Routes = [
     
@@ -73,6 +74,10 @@ const appRoutes : Routes = [
     {
         path:'ngtemplate',
         component:NgTemplatedemoComponent
+    },
+    {
+        path:'contentprojection',
+        component:ContenttestComponent
     },
     { path: '', redirectTo: '/', pathMatch: 'full' }
  

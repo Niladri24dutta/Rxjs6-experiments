@@ -17,6 +17,8 @@ import { RxPairwiseComponent } from './rx-pairwise/rx-pairwise.component';
 import { RxhotcoldObservableComponent } from './rxhotcold-observable/rxhotcold-observable.component';
 import { NgTemplatedemoComponent } from './ng-templatedemo/ng-templatedemo.component';
 import { TabcontainerComponent } from './tabcontainer/tabcontainer.component';
+import { ContentprojectionComponent } from './contentprojection/contentprojection.component';
+import { ContenttestComponent } from './contenttest/contenttest.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { TabcontainerComponent } from './tabcontainer/tabcontainer.component';
     RxPairwiseComponent,
     RxhotcoldObservableComponent,
     NgTemplatedemoComponent,
-    TabcontainerComponent
+    TabcontainerComponent,
+    ContentprojectionComponent,
+    ContenttestComponent
   ],
   imports: [
     BrowserModule,
